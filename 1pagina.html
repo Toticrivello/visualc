@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--INFO X BROWSER-->
+    <meta charset="UTF-8">
+    <script defer src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    
+
+    <title>1pagina</title>
+    <style>
+        body {
+            background-color:#414540;
+        }
+        
+    
+    </style>
+
+</head>
+
+<body> <!--CONTENUTO-->
+
+    <!--header - navbar-->
+    <header class="header">
+        
+        <!--navbar-->
+        <nav class="navbar">
+           
+            <!--navbar logor-->
+            <div class="navbar_logo_contenitore">
+                <div class="navbar_logo">
+                    <img src="LOGO.png" style="height: 30px;"></img>
+                </div>
+            </div>
+            
+            <!--navbar vuoto-->
+            <div class="navbar_vuoto"></div>
+
+           <!--navbar menu-->
+            <div class="navbar_menu_contenitore">
+                <div class="navbar_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> 
+            </div>
+
+        </nav>
+    </header>
+
+    <!--logo centrale-->
+    <DIV id="logo" style="margin: 15%; width: 70%; display: flex; align-items: center; justify-content: center  ; margin-top: 30%;"> <!--CONTENITORE TITOLO-->
+            
+        <img src="LOGO.png" style="width:30%; padding: 2%;"></img>    
+            
+        <div style="color: #85E96C; width: 46%; height: 100%; display: flex; align-items: center; justify-content: center;font-family: Arial, Helvetica, sans-serif;font-weight: bold ;font-size: 8vw;">
+            <p>DRAFT</p>
+        </div>
+
+    </DIV>
+
+    <!--scritta my fleet con il + -->
+    <div class="centrato" style="left: 0;width: 100%;">
+
+        <div class="centrato" style="width: 100%;margin-left: 20px;margin-right: 20px;">
+    
+            <div style="color: #EBFFE5;">
+                <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 8vw;white-space: nowrap;">My Fleet</h1>
+             </div>
+    
+            <div style="width: 100%;"></div>
+
+            <div class="centrato" style="color: #85E96C; width: 30%;">
+                <button id="fleet_bottone" class="fleet_bottone">+</button>
+            </div>
+
+        </div>
+
+    </div>
+
+   
+
+    <!--scritta my fleet lista -->
+
+    <div class="survey_contenitore">
+
+        <ul class="survey_list">
+            
+            <li class="survey_list_element">
+                <span style="color: #85E96C;">m/v hartura</span>
+                <img id="STAR" src="STAR.svg" class="star" alt="">
+                <div>
+                    <button></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="survey_contenitore">
+
+        <ul class="survey_list">
+            
+            <li class="survey_list_element">
+                <span>m/v hermana</span>
+                <div>
+                    <button></button>
+                </div>
+            </li>
+
+            <li class="survey_list_element">
+                <span>m/v hidalga</span>
+                <div>
+                    <button></button>
+                </div>
+            </li>
+
+        </ul>
+    
+    </div>
+
+    <ul id="ship-list"></ul>
+
+
+</body>
+</html>
+

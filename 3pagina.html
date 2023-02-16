@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--INFO X BROWSER-->
+    <meta charset="UTF-8">
+    <script defer src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    
+
+    <title>3pagina</title>
+    <style>
+        body {
+            background-color:#414540;
+        }
+        
+    
+    </style>
+
+</head>
+
+<body> <!--CONTENUTO-->
+
+    <!--header - navbar-->
+    <header class="header">
+
+        <!--navbar-->
+        <nav class="navbar">
+
+            <!--navbar logo-->
+            <div class="navbar_logo_contenitore">
+                <div class="navbar_logo">
+                    <img src="LOGO.png" style="height: 30px;"></img>
+                </div>
+            </div>
+
+            <!--navbar vuoto-->
+            <div class="navbar_vuoto"></div>
+
+            <!--navbar menu-->
+            <div class="navbar_menu_contenitore">
+                <div class="navbar_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!--pescaggi--> 
+
+    <h1 class="centrato" style="margin-top: 100px;color: #C9DAC4; font-family: Arial, Helvetica, sans-serif;font-weight: bold ;font-size: 8vw;">DRAFTS</h1>
+    
+    <div class="centrato" style="gap:10px; margin-top: 50px; margin-left: 20x; margin-right: 20x; padding-left: 20px; padding-right: 20px;">
+
+        <div class="dati_nave_contenitore" style="border: none; display: flex; flex-direction: column; gap: 50px; margin: 0;">
+            <div class="input_contenitore">
+                <input id="userinput_fwd-sn" class="input_dati_nave" type="number" step=".001" name="fwd-sn" autocomplete="off" required>
+                <span></span>
+            </div>
+            <div class="input_contenitore">
+                <input id="userinput_mid-sn" class="input_dati_nave" type="number" step=".001" name="mid-sn" autocomplete="off" required>
+                <span></span>
+            </div>
+            <div class="input_contenitore">
+                <input id="userinput_aft-sn" class="input_dati_nave" type="number" step=".001" name="aft-sn" autocomplete="off" required>
+                <span></span>
+            </div>
+        </div>
+
+        <img src="VESSEL.png" style="width: 30%"></img>
+
+        <div class="dati_nave_contenitore" style="border: none; display: flex; flex-direction: column; gap: 50px; margin: 0;">
+            <div class="input_contenitore">
+                <input id="userinput_fwd-dr" class="input_dati_nave" type="number" step=".001" name="fwd-dr" autocomplete="off" required>
+                <span></span>
+            </div>
+            <div class="input_contenitore">
+                <input id="userinput_mid-dr" class="input_dati_nave" type="number" step=".001" name="mid-dr" autocomplete="off" required>
+                <span></span>
+            </div>
+            <div class="input_contenitore">
+                <input id="userinput_aft-dr" class="input_dati_nave" type="number" step=".001" name="aft-dr" autocomplete="off" required>
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <a href="http://127.0.0.1:5500/2pagina.html">pagina2</a>
+    <!--water density--> 
+
+    <h1 class="centrato" style="margin-top: 100px;color: #C9DAC4; font-family: Arial, Helvetica, sans-serif;font-weight: bold ;font-size: 8vw;">WATER DENSITY</h1>
+    
+
+    <div class="centrato" style="gap:10px; margin-top: 50px; margin-left: 20x; margin-right: 20x; padding-left: 20px; padding-right: 20px;">
+        <div class="input_contenitore">
+            <button class="fleet_bottone" style="font-weight: bold ;font-size: 8vw;">-</button>
+        </div>
+
+        <div class="input_contenitore">
+            <input id="userinput_density" class="input_dati_nave" type="number" step=".001" name="density" autocomplete="off" required>
+        </div>
+
+        <div class="input_contenitore">
+            <button class="fleet_bottone" style="font-weight: bold ;font-size: 8vw;">+</button>
+        </div>
+
+    </div>
+
+    <!--pesi--> 
+
+    <h1 class="centrato" style="margin-top: 100px;color: #C9DAC4; font-family: Arial, Helvetica, sans-serif;font-weight: bold ;font-size: 8vw;">WEIGHTS</h1>
+    
+
+    <div class="dati_nave_contenitore" style="border: none; margin-top: 50px; margin-left: 20x; margin-right: 20x;">
+    
+        <div class="dati_nave_righe">
+    
+            <div class="input_contenitore">
+                <input id="userinput-ballast" class="input_dati_nave" type="number" name="Vessel Name" autocomplete="off" required>
+                <span>Ballast</span>
+            </div>
+    
+            <div class="input_contenitore">
+                <input id="userinput-freshwater" class="input_dati_nave" type="number" name="Vessel Name" autocomplete="off" required>
+                <span>Fresh Water</span>
+            </div>
+    
+        </div>
+    
+        <div class="dati_nave_righe">
+    
+            <div class="input_contenitore">
+                <input id="userinput-fo" class="input_dati_nave" type="number" name="Vessel Name" autocomplete="off" required>
+                <span>FO</span>
+            </div>
+    
+            <div class="input_contenitore">
+                <input id="userinput-do" class="input_dati_nave" type="number" name="Vessel Name" autocomplete="off" required>
+                <span>DO</span>
+            </div>
+    
+        </div>
+    
+        <div class="dati_nave_righe">
+    
+            <div class="input_contenitore">
+                <input id="userinput-lo" class="input_dati_nave" type="number" name="Vessel Name" autocomplete="off" required>
+                <span>LO</span>
+            </div>
+    
+            <div class="input_contenitore">
+                <input id="userinput-othertanks" class="input_dati_nave" type="number" name="Vessel Name" autocomplete="off" required>
+                <span>Other Tanks</span>
+            </div>
+    
+        </div>
+    
+        <div class="dati_nave_righe">
+    
+            <div class="input_contenitore">
+                <input id="userinput-othercargo" class="input_dati_nave" type="number" name="Vessel Name" autocomplete="off" required>
+                <span>Other Cargo</span>
+            </div>
+    
+            <div class="input_contenitore">
+                <input id="userinput-constant" class="input_dati_nave" type="number" name="Vessel Name" autocomplete="off" required>
+                <span>Constant</span>
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+
+    <h1 class="centrato" style="margin-top: 100px;color: #C9DAC4; font-family: Arial, Helvetica, sans-serif;font-weight: bold ;font-size: 8vw;">SURVEY</h1>
+    
+    
+    <div class="centrato" style="gap:10px; margin-top: 50px; margin-left: 20x; margin-right: 20x; padding-left: 20px; padding-right: 20px;">
+
+        <select name="mean" id="mean" class="input_dati_nave">
+            
+            <option class="options" value="QUARTER MEAN">QUARTER MEAN</option>
+            <option class="options" value="MEAN of MEAN">MEAN of MEAN</option>
+            <option class="options" value="MEAN of MEAN of MEAN">MEAN of MEAN of MEAN</option>
+            
+        </select>
+
+    </div>
+
+    <h4 class="centrato" style="margin-top: 50px;color:#C9DAC4; font-family: Arial, Helvetica, sans-serif;font-weight: bold ;font-size: 6vw;">DRAFT SURVEY</h4>
+
+    <div class="centrato">
+    
+        <ul style="list-style: none; padding: 0;width: 100%;margin: 0px 20px;">
+            <li class="result"><span class="label">FWD Draft: </span><span class="value"></span></li>
+            <li class="result"><span class="label">MID Draft: </span><span class="value"></span></li>
+            <li class="result"><span class="label">AFT Draft: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Apparent TRIM: </span><span class="value"></span></li>
+            <li class="result"><span class="label">FWD Immersion: </span><span class="value"></span></li>
+            <li class="result"><span class="label">MID Immersion: </span><span class="value"></span></li>
+            <li class="result"><span class="label">AFT Immersion: </span><span class="value"></span></li>
+            <li class="result"><span class="label">True TRIM: </span><span class="value"></span></li>
+
+            <li class="result"><span class="label">Hogging: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Mean: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Keel Tickness: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Mean Corrected: </span><span class="value"></span></li>
+            
+            <li class="result"><span></span><span></span></li>
+            
+            <li class="result"><span class="label">Displacement: </span><span class="value"></span></li>
+            <li class="result"><span class="label">TPC: </span><span class="value"></span></li>
+            <li class="result"><span class="label">LCF: </span><span class="value"></span></li>
+            <li class="result"><span class="label">1° MTC: </span><span class="value"></span></li>
+            <li class="result"><span class="label">2° MTC: </span><span class="value"></span></li>
+            
+            <li class="result"><span></span><span></span></li>
+
+            <li class="result"><span class="label">1° TRIM Correction: </span><span class="value"></span></li>
+            <li class="result"><span class="label">2° TRIM Correction: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Density Correction: </span><span class="value"></span></li>
+            
+            <li class="result"><span></span><span></span></li>
+
+            <li class="result"><span class="label">Final Displacement: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Lightship: </span><span class="value"></span></li>
+            <li class="result"><span class="label">DWT: </span><span class="value"></span></li>
+            
+            <li class="result"><span></span><span></span></li>
+
+            <li class="result"><span class="label">Ballast: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Fresh Water: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Fuel Oil: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Diesel Oil: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Lub Oil: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Other Tanks: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Other Cargo: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Total Deductions: </span><span class="value"></span></li>
+            
+            <li class="result"><span></span><span></span></li>
+
+            <li class="result"><span class="label">Constant: </span><span class="value"></span></li>
+            <li class="result"><span class="label">Cargo: </span><span class="value"></span></li>
+    
+        </ul>
+    </div>
+
+
+
+
+
+
+    
+
+  
+
+
+
+
+
+</body>
+</html>
+

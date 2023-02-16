@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--INFO X BROWSER-->
+    <meta charset="UTF-8">
+    <script defer src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    
+
+    <title>2pagina</title>
+    <style>
+        body {
+            background-color:#414540;
+        }
+        
+    
+    </style>
+
+</head>
+
+<body> <!--CONTENUTO-->
+
+    <!--header - navbar-->
+    <header class="header">
+
+        <!--navbar-->
+        <nav class="navbar">
+
+            <!--navbar logo-->
+            <div class="navbar_logo_contenitore">
+                <div class="navbar_logo">
+                    <img src="LOGO.png" style="height: 30px;"></img>
+                </div>
+            </div>
+
+            <!--navbar vuoto-->
+            <div class="navbar_vuoto"></div>
+
+            <!--navbar menu-->
+            <div class="navbar_menu_contenitore">
+                <div class="navbar_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--dati nave-->
+    <div class="dati_nave_contenitore">
+
+        <div class="dati_nave_1riga">
+
+            <div class="input_contenitore">
+                <input id="userinput-vessel" class="input_dati_nave" type="text" name="Vessel Name" autocomplete="off" required>
+                <span>Vessel Name</span>
+            </div>
+
+        </div>
+
+        <div class="dati_nave_righe">
+            
+            <div class="input_contenitore">
+                <input id="userinput-lightship" class="input_dati_nave" type="number" step=".001" name="Vessel Name" autocomplete="off" required>
+                <span>Lightship</span>
+            </div>
+
+            <div class="input_contenitore">
+                <input id="userinput-dfdwpp" class="input_dati_nave" type="number" step=".001" name="Vessel Name" autocomplete="off" required>
+                <span>d FWD PP</span>
+            </div>
+
+        </div>
+
+        <div class="dati_nave_righe">
+            
+            <div class="input_contenitore">
+                <input id="userinput-lbp" class="input_dati_nave" type="number" step=".001" name="Vessel Name" autocomplete="off" required>
+                <span>LBP</span>
+            </div>
+
+            <div class="input_contenitore">
+                <input id="userinput-dmidpp" class="input_dati_nave" type="text" name="Vessel Name" autocomplete="off" required>
+                <span>d MID PP</span>
+            </div>
+
+        </div>
+
+        <div class="dati_nave_righe">
+            
+            <div class="input_contenitore">
+                <input id="userinput-lbm" class="input_dati_nave" type="number" step=".001" name="Vessel Name" autocomplete="off" required>
+                <span>LBM</span>
+            </div>
+
+            <div class="input_contenitore">
+                <input id="userinput-daftpp" class="input_dati_nave" type="number" step=".001" name="Vessel Name" autocomplete="off" required>
+                <span>d AFT PP</span>
+            </div>
+
+        </div>
+
+        <div class="dati_nave_righe">
+            
+            <div class="input_contenitore">
+                <input id="userinput-keel" class="input_dati_nave" type="number" step=".001" name="Vessel Name" autocomplete="off" required>
+                <span>Keel TKC</span>
+            </div>
+
+            <div class="input_contenitore">
+                <input id="userinput" class="input_dati_nave" style="display: none;" type="number" step=".001" name="Vessel Name" autocomplete="off" required>
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="http://127.0.0.1:5500/3pagina.html">pagina3</a>
+
+    <!--scritta draft survey con il + -->
+    <div class="centrato" style="left: 0;width: 100%;">
+
+        <div class="centrato" style="width: 100%;margin-left: 20px;margin-right: 20px;">
+    
+            <div style="color: #EBFFE5;">
+                <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 8vw;white-space: nowrap;">Draft Survey</h1>
+             </div>
+    
+            <div style="width: 100%;"></div>
+
+            <div class="centrato" style="color: #85E96C; width: 30%;">
+                <button id="newsurvey_bottone" class="fleet_bottone">+</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--new survey menu -->
+    <div class="newsurvey_contenitore_off">
+    
+        <div class="newsurvey_titolo">
+            <h1>New Survey</h1>
+        </div>
+
+        <div class="newsurvey_figlio">
+            <div style="width: 100%;">
+        
+                <div class="dati_nave_1riga">
+        
+                    <div class="input_contenitore">
+                        <input id="userinput-port" class="input_dati_nave" type="text" name="Vessel Name" autocomplete="off"
+                            required>
+                        <span>Port</span>
+                    </div>
+        
+                </div>
+        
+                <div class="dati_nave_righe">
+        
+                    <div class="input_contenitore">
+                        <input id="userinput-voy" class="input_dati_nave" type="number" step=".001" name="Vessel Name"
+                            autocomplete="off" required>
+                        <span>Voy</span>
+                    </div>
+        
+                    <div class="input_contenitore">
+                        <input id="userinput-year" class="input_dati_nave" type="number" step=".001" name="Vessel Name"
+                            autocomplete="off" required>
+                        <span>Year</span>
+                    </div>
+                </div>
+
+                <div class="newsurvey_figlio_radiobox">
+                    <div>
+                        <input type="radio" name="ini-int-fin" value="Initial">
+                        <label for="ini-int-fin">Initial</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="ini-int-fin" value="Intermediate">
+                        <label for="ini-int-fin">Intermediate</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="ini-int-fin" value="Final">
+                        <label for="ini-int-fin">Final</label>
+                    </div>
+
+                </div>
+        
+            </div>
+
+            <img src="VESSEL.png" style=" position: relative;width: 30%;padding-right: 20px;"></img>
+            
+        </div>
+
+
+        <div class="newsurvey_figlio_buttonbox">
+            <button>Add Survey</button>
+        </div>
+
+
+        
+
+    </div>
+    
+    
+
+    <!--lista draft survey -->
+    
+    <div class="survey_contenitore">
+
+        <ul class="survey_list">
+            
+            <li class="survey_list_element">
+                <span>voy 01/23 - carboneras - fin</span>
+                <div>
+                    <button></button>
+                </div>
+            </li>
+
+            <li class="survey_list_element">
+                <span>voy 01/23 - carboneras - int</span>
+                <div>
+                    <button></button>
+                </div>
+            </li>
+
+            <li class="survey_list_element">
+                <span>voy 01/23 - carboneras - ini</span>
+                <div>
+                    <button></button>
+                </div>
+            </li>
+
+        </ul>
+    
+    </div>
+
+    <div style="height: 300px;">
+    
+    </div>
+
+    
+
+  
+
+
+
+
+
+</body>
+</html>
+

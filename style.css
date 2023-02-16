@@ -1,0 +1,499 @@
+/*heder - navbar*/
+
+
+*{box-sizing: border-box;}
+*button{
+   padding:0;
+   border: 0;
+   width: 0;
+}
+
+.header{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width: 100vw;
+   height: 60px; 
+   position:fixed; 
+   top: 0; 
+   left: 0;
+   background-color:#414540b4;
+   backdrop-filter: blur(5px);
+   z-index: 1;
+   border-bottom:#85e96c solid 2px;
+   transform: none;
+   
+}
+
+
+.navbar{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width: 100%;
+   height: 60px; 
+   margin-left: 20px; 
+   margin-right: 20px; 
+}
+
+.navbar_logo_contenitore{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width: 15%;
+   height: 100%; 
+}
+
+.navbar_logo{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+
+.navbar_vuoto{
+   width: 70%;
+}
+
+.navbar_menu_contenitore{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width: 15%;
+   height: 100%; 
+}
+
+.navbar_menu{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   gap: 6px;
+}
+
+.navbar_menu span{
+   width: 30px;
+   height: 3px;
+   border-radius: 7px;
+   background: #85E96C;
+}
+
+.centrato{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+/*fleet*/
+
+.fleet_bottone{
+   position: absolute;
+   font-family: Arial, Helvetica, sans-serif; 
+   font-weight: normal; 
+   font-size: 3em;
+   color: #85E96C;
+   background-color: #414540;
+   border: 0;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   transition: all 0.2s ease-in;
+}
+
+.fleet_bottone_after{
+   transform: rotate(-45deg);
+   transition: all 0.2s ease-in;
+   font-size: 4em;
+}
+
+
+
+.star{
+   margin-right: 20px;
+   transition: all 0.5s;
+}
+
+
+/*dati nave*/
+
+.dati_nave_contenitore{
+  
+   margin-top:80px;
+   border-bottom:#85E96C solid 2px;
+}
+
+.dati_nave_1riga{
+   height: 80px; 
+   margin: 20px;
+}
+
+.dati_nave_righe{
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   height: 80px;
+   margin: 20px;
+   gap: 10%;
+
+}
+
+.input_contenitore{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   height: 80px;
+   width: 100%;
+   color: #C9DAC4;
+   overflow: hidden;
+}
+
+.input_contenitore span{
+   position: absolute; 
+   top: 30px;
+   left: 10px;
+   color: #C9DAC4;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem;
+   cursor: text;
+   pointer-events: none;
+   transition: 0.4s;
+}
+
+.input_dati_nave{
+   position: relative;
+   background-color:rgb(133, 233, 108, 0.1);
+   height: 60px;
+   width:100%;
+   border: 0;
+   border-radius: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+   align-items: center;
+   justify-content: center;
+   color:#C9DAC4;
+   white-space: nowrap;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.input_dati_nave:focus{
+   border: 2px solid #85E96C;
+   background: #414540;
+   outline: 0;
+}
+
+.input_dati_nave:valid{
+   background: #414540;
+   color:#C9DAC4;
+   border: 2px solid rgb(133, 233, 108,0.5);
+}
+
+.input_dati_nave:focus ~ span{
+   top: 0px;
+   left: 10px;
+   translate: 0px - 15px;
+   font-size: 0.9rem;
+   padding: 0 5px;
+   color: #85E96C;
+   background: #414540;
+   
+}
+
+.input_dati_nave:valid ~ span{
+   top: 0px;
+   left: 10px;
+   translate: 0px - 15px;
+   font-size: 0.9rem;
+   padding: 0 5px;
+   color:  rgb(133, 233, 108,0.5);
+   background: #414540;
+}
+
+
+/*lista survey*/
+
+.survey_contenitore{
+   left: 0;
+   width: 100%;
+}
+
+.survey_list{
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin: 20px;
+   overflow: hidden;
+   list-style: none;
+   padding-left: 0;
+  
+}
+
+.survey_list_element {
+   position: relative;
+   height: 60px;
+   width: 100%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   cursor: pointer;
+   border-bottom: 2px solid rgb(201, 218, 196, 0.2);
+   border-radius: 5px;   
+   background-color:rgb(65, 69, 64);
+   -webkit-transition: 0.4s;
+   transition: .4s;
+}
+
+.survey_list_element span {
+   height: 60px;
+   width: 100%;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   padding-left: 20px;
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+   font-size: 3.5vw;
+   white-space: nowrap;
+   color:#C9DAC4;
+   -webkit-transition: 0.4s;
+   transition: .4s;
+}
+
+.survey_list_element div {
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   height: fit-content;
+   width: fit-content;
+   -webkit-transition: 0.4s;
+   transition: .4s;
+}
+
+.survey_list_element button {
+   padding: 0;
+   color:rgb(65, 69, 64);
+   opacity: 0;
+   height: 60px;
+   width: 0px;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   border-radius: 3px;
+   font-size: 20px;
+   -webkit-transition: 0.4s;
+   transition: .4s;
+   content: "";
+}
+
+.survey_list_element button.aperto {
+   background-color:#85E96C;
+   opacity: 100;
+   width: 60px;
+   -webkit-transition: 0.4s;
+   transition: .4s;
+}
+
+button.aperto::before {
+   content: "";
+   display: inline-block;
+   background-image: url("open.svg");
+   width: 50%;
+   height: 50%;
+   background-size: cover;
+} 
+
+.survey_list_element button.duplica {
+   background-color:#e6e655;
+   opacity: 100;
+   width: 60px;
+   -webkit-transition: 0.4s;
+   transition: .4s;
+}
+
+button.duplica::before {
+   content: "";
+   display: inline-block;
+   background-image: url("duplicate.svg");
+   width: 50%;
+   height: 50%;
+   background-size: cover;
+} 
+
+.survey_list_element button.elimina {
+   background-color:rgb(230, 85, 85);
+   opacity: 100;
+   width: 60px;
+   -webkit-transition: 0.4s;
+   transition: .4s;
+}
+
+button.elimina::before {
+   content: "";
+   display: inline-block;
+   background-image: url("elimina.svg");
+   width: 50%;
+   height: 50%;
+   background-size: cover;
+} 
+
+.bordo-duplica {
+   border-bottom: 2px solid #e6e655;
+}
+
+.bordo-elimina {
+   border-bottom: 2px solid rgb(230, 85, 85);
+}
+
+.bordo {
+   border-bottom: 2px solid #85E96C;
+}
+
+.result {
+   position: relative;
+   list-style: none;
+   height: 60px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content:left;
+   overflow: hidden;
+   cursor: pointer;
+   border-bottom: 2px solid rgb(201, 218, 196, 0.2);
+   border-radius: 5px;
+   background-color: rgb(65, 69, 64);
+   -webkit-transition: 0.4s;
+   transition: .4s;
+   gap: 20px; 
+   color: #C9DAC4; 
+   font-family:Arial, Helvetica, sans-serif; 
+   font-weight: normal; 
+   font-size: 4.5vw;
+}
+
+.label{
+   width: 50%;
+   text-align: right;
+}
+
+/*menu new survey*/
+
+.newsurvey_contenitore_off{
+   position: absolute;
+   background-color: #414540a4;
+   width: 0vw;
+   height: auto;
+   border: 3px solid #85e96c;
+   border-radius: 30px;
+   z-index: 1; 
+   right: 40px;
+   backdrop-filter: blur(5px);
+   -webkit-transition: 0.4s;
+   transition: .4s;
+   opacity: 0;
+   overflow: hidden;
+}
+
+.newsurvey_contenitore{
+   width: 80vw;
+   opacity: 100;
+}
+
+.newsurvey_titolo{
+   color: #EBFFE5; 
+   position: relative; 
+   width: 100%; 
+   align-items: center;
+   justify-content: center; 
+   display: flex; 
+   margin-top: 20px;
+}
+
+.newsurvey_titolo h1{
+   position: relative;
+   font-family: Arial, Helvetica, sans-serif; 
+   font-weight: normal; 
+   font-size: 8vw;
+   white-space: nowrap;
+}
+
+.newsurvey_figlio {
+   position: relative;
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   height: 100%; 
+   margin-bottom: 10px;
+}
+
+.newsurvey_figlio_radiobox{
+   position: relative;
+   align-items: left;
+   display: flex;
+   flex-direction: column; 
+   gap: 20px; 
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 20px;
+}
+
+.newsurvey_figlio_radiobox div{
+   position: relative;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+   gap: 10px;
+}
+
+.newsurvey_figlio_radiobox label{
+   position: relative;
+   white-space: nowrap;
+   overflow: hidden;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: larger;
+   color: #C9DAC4;
+
+}
+
+input[type="radio"]{
+   position: relative;
+   width: 20px;
+   height: 20px;
+   transition: 0.2s ease-in;
+}
+
+
+input[type="radio"]:checked ~ label{
+   color: #85E96C;
+}
+
+.newsurvey_figlio_buttonbox{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.newsurvey_figlio_buttonbox button{
+   position: relative;
+   background-color: #85E96C; 
+   border: none; 
+   width: 50%; 
+   height: 60px; 
+   border-radius: 3px;
+   color: #414540;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem; 
+   font-weight: bolder; 
+   text-transform: uppercase;
+}
+
