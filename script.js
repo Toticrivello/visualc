@@ -154,8 +154,7 @@ let logo = document.getElementById("logo");
 
   setTimeout(() => {
     vessel.classList.add("vessel_nascosta_dopo");
-    logo.classList.toggle("logo_1pagina");
-
+    //logo.classList.toggle("logo_1pagina");
   }, 7000);
 
   setTimeout(() => {
