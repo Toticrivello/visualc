@@ -1,4 +1,4 @@
-/*heder - navbar*/
+
 
 
 *{box-sizing: border-box;}
@@ -7,6 +7,54 @@
    border: 0;
    width: 0;
 }
+
+/*launch screen*/
+
+.vessel{
+   margin: 15%; 
+   width: 70%; 
+   margin-bottom: 10px;
+   margin-top: 20px; 
+   opacity:100;
+   transition: all 3s ease-in;
+}
+
+.vessel_nascosta_prima{
+   margin-top: 1200px; 
+   opacity:0;
+
+}
+
+.vessel_nascosta_dopo{
+   margin-top: -1500px; 
+   /*transform: translateY(-100%); */
+   opacity:0;
+
+}
+
+.logo{
+   margin: 15%; 
+   width: 70%; 
+   display: flex; 
+   align-items: center; 
+   justify-content: center  ; 
+   margin-top: 10px;
+   transition: all 3s ease-out;
+}
+
+.logo_1pagina {
+   margin: 15%;
+   width: 70%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 30%;
+}
+
+
+
+/*heder - navbar*/
+
 
 .header{
    display:flex;
@@ -250,7 +298,7 @@
    transition: .4s;
 }
 
-.survey_list_element span {
+.survey_span {
    height: 60px;
    width: 100%;
    display: flex;

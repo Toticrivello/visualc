@@ -145,6 +145,31 @@ function calcoli_finali() {
 
 //'CODICI PER Le pagine'
 
+let vessel = document.getElementById("vessel");
+let logo = document.getElementById("logo");
+
+  setTimeout(() => {
+    vessel.classList.remove("vessel_nascosta_prima");
+  }, 1000);
+
+  setTimeout(() => {
+    vessel.classList.add("vessel_nascosta_dopo");
+    logo.classList.toggle("logo_1pagina");
+
+  }, 7000);
+
+  setTimeout(() => {
+    logo.classList.toggle("logo_1pagina");
+    window.location.href="1pagina.html";
+  }, 10000);
+
+
+
+
+
+
+
+
 
 let items = document.querySelectorAll(".survey_list_element");
 
@@ -251,7 +276,7 @@ items.forEach(function (element) {
 
 /*evento per menu new draft*/
 
-let newsurvey_button=document.getElementById("newsurvey_bottone");
+/*let newsurvey_button=document.getElementById("newsurvey_bottone");
 let newsurvey_menu=document.querySelector(".newsurvey_contenitore_off");
 
 newsurvey_button.addEventListener("click", function () {
@@ -263,21 +288,24 @@ newsurvey_button.addEventListener("click", function () {
 
 
 
-/*items.forEach(function (element) {
+items.forEach(function (element) {
   let button = element.querySelector("button");
 
   button.addEventListener("click", function () {
-    console.log("ciao");
+
     if (button.classList.contains("elimina")) {
       element.remove();
+      console.log("click classe elimina");
     } else if (button.classList.contains("duplica")) {
       let clone = element.cloneNode(true);
       element.parentNode.insertBefore(clone, element.nextSibling);
+      console.log("click classe duplica");
     } else if (button.classList.contains("aperto")) {
       window.location.href = "altra_pagina.html";
+      console.log("click classe aperto");
     }
   });
-});*/
+});
 
 
 
